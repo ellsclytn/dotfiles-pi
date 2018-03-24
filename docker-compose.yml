@@ -1,6 +1,18 @@
 version: '3.2'
 
 services:
+  pihole:
+    image: diginc/pi-hole-multiarch:debian_armhf
+    ports:
+      - '53:53/tcp'
+      - '53:53/udp'
+      - '80:80/tcp'
+    environment:
+      ServerIP: 192.168.1.13
+      TZ: 'Australia/Melbourne'
+    volumes:
+      - '/media/usb/pihole.log:/var/log/pihole.log'
+    restart: always
   syncthing:
     image: napnap75/rpi-syncthing
     network_mode: host

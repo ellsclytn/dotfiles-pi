@@ -8,6 +8,7 @@
 
 I'm aiming to get as much of the configuration Dockerised as possible. Currently, this includes:
 
+* PiHole
 * Syncthing
 * OpenVPN
 * Sonarr (routed through OpenVPN)
@@ -15,4 +16,4 @@ I'm aiming to get as much of the configuration Dockerised as possible. Currently
 
 ## TODO 🛠
 
-* Dockerise PiHole
+* Put all my ZSH and Vim config in here
